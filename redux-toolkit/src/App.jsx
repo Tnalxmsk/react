@@ -6,6 +6,27 @@ import {useReducer, useRef, useState} from "react";
 import {Provider} from "react-redux";
 import {store} from "./store/store.js";
 
+const mockData = [
+    {
+        id: 0,
+        isDone: false,
+        content: "React Study",
+        date: new Date().getTime(),
+    },
+    {
+        id: 1,
+        isDone: false,
+        content: "Kotlin Study",
+        date: new Date().getTime(),
+    },
+    {
+        id: 2,
+        isDone: false,
+        content: "Android Study",
+        date: new Date().getTime(),
+    },
+]
+
 function App() {
     const [count, setCount] = useState(3)
 
